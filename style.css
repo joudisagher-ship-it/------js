@@ -1,0 +1,79 @@
+/* تنسيق الخلفية بالكامل */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3677d1; /* اللون الأزرق المماثل للصورة */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* تصميم البطاقة البيضاء في المنتصف */
+.todo-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.todo-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* قسم الإدخال والزر */
+.input-section {
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+/* زر الإضافة الأسود المماثل للصورة */
+#addBtn {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+#addBtn:hover {
+    background-color: #444;
+}
+
+/* تنسيق قائمة المهام */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: right;
+}
+
+#taskList li {
+    padding: 10px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* إضافة خط شطب عند الضغط على المهمة المكتملة */
+#taskList li.done {
+    text-decoration: line-through;
+    color: #aaa;
+}
